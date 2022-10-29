@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Product Modal</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body>
-        <div class="flex items-center justify-center min-h-screen bg-white-500">
-            <!-- Modal Container -->
-            <div class="flex flex-col p-3 md:flex-row p-11">
-                <!-- Coumn 1 -->
-                <div>
-                    <img src="./images/headphone.png" alt="headphone" class="mx-auto w-60 hover:scale-105 duration-200 " />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Product Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen bg-slate-100">
+      <!-- Modal Container -->
+      <div
+        class="flex flex-col p-6 mx-10 space-y-10 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16"
+      >
+        <!-- Coumn 1 -->
+        <div>
+          <img
+            src="./images/headphone.png"
+            alt="headphone"
+            class="mx-auto w-60 hover:scale-105 duration-200"
+          />
+        </div>
+        <!-- Column 2 -->
+        <div class="flex flex-col text-center space-y-4 md:text-left">
+          <div>
+            <div
+              class="inline-block bg-black text-white text-sm text-center rounded-full px-3 py-1"
+            >
+              Free Shipping
+            </div>
+          </div>
+          <!-- Title -->
+          <h2 class="text-2xl max-w-sm font-medium">
+            Razer Kraken Kitty Edt Gaming Headset Quartz
+          </h2>
+          <!-- Pricing -->
+          <div class="space-y-1">
+            <p class="line-through text-lg">$799</p>
+            <p class="text-5xl">$599</p>
+            <p class="text-gray-500">
+              This offer is valid until April 3rd or as long as stock lasts!
+            </p>
+          </div>
+          <!-- Button Group -->
+          <div class="flex flex-col space-y-3">
+            <!-- Add to cart Button -->
+            <div class="group">
+              <button
+                class="w-full transition-all duration-200 bg-blue-700 rounded-lg border-b-8 border-b-blue-800 group-hover:bg-blue-700 group-hover:border-b-0 group-hover:border-t-8 group-hover:border-b-0 group-hover:bg-blue-700 group-hover:border-t-blue-700 group-hover:shadow-lg"
+              >
+                <div
+                  class="bg-blue-500 text-white duration-200 py-4 rounded-lg group-hover:bg-blue-700"
+                >
+                  Add to cart
                 </div>
-                <!-- Column 2 -->
-                <div class="flex flex-col text-center md:text-left">
-
-                </div>
+              </button>
+            </div>
+            <!--Stock  -->
+            <div class="flex justify-start items-center space-x-3">
+                <div class="h-3 w-3 rounded-full bg-green-300 hover:animate-ping"></div>
+                <p class="text-sm">50+ pcs. in stock</p>
             </div>
 
+            <!--  Secondar Buttons-->
+            <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
+                <button class="w-full flex items-center justify-center border border-gray-300 shadow-sm rounded-lg py-3 hover:translate-y-0.5 hover:shadow-xl space-x-3 transition-all duration-150">
+                    <img src="./images/weight.png" alt="weight" class="w-8">
+                    <p>Add to cart</p>
+                </button>
+                <button class="w-full flex items-center justify-center border border-gray-300 shadow-sm rounded-lg py-3 hover:translate-y-0.5 hover:shadow-xl space-x-3 transition-all duration-150">
+                    <img src="./images/heart.png" alt="weight" class="w-8">
+                    <p>Wishlist</p>
+                </button>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
